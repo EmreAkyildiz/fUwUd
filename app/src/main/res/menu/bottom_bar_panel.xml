@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/actionEditMenu"
+        android:icon="@drawable/icon_menu"
+        android:title="Menü" />
+    <item
+        android:id="@+id/actionOrders"
+        android:icon="@drawable/icon_orders"
+        android:title="Siparişler" />
+    <item
+        android:id="@+id/actionComments"
+        android:icon="@drawable/icon_comment"
+        android:title="Yorumlar" />
+    <item
+        android:id="@+id/actionExit"
+        android:icon="@drawable/icon_exit"
+        android:title="Çıkış" />
+
+</menu>

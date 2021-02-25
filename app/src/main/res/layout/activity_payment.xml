@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PaymentActivity">
+
+    <TextView
+        android:id="@+id/textViewDeliveryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Teslim Zamanı"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPaymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="67dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Ödeme Şekli"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDeliveryDate" />
+
+    <TextView
+        android:id="@+id/textViewOrderNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="67dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Sipariş Notu"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPaymentMethod" />
+
+    <EditText
+        android:id="@+id/editTextOrderNote"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans"
+        android:hint="Siparişlerinizle ilgili tüm detayları belirtebilirsiniz."
+        android:padding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrderNote" />
+
+    <Button
+        android:id="@+id/buttonGereksizPayment3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_gradient2"
+        android:enabled="false"
+        android:fontFamily="@font/open_sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPaymentNext"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_complete"
+        android:fontFamily="@font/open_sans"
+        android:text="SİPARİŞ VER"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGereksizPayment3"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGereksizPayment3"
+        app:layout_constraintTop_toTopOf="@+id/buttonGereksizPayment3" />
+
+    <TextView
+        android:id="@+id/textViewPaymentPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/open_sans"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGereksizPayment3"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/buttonGereksizPayment3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Toplam Ücret:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGereksizPayment3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonGereksizPayment3" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/open_sans"
+        android:text="TL"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGereksizPayment3"
+        app:layout_constraintStart_toEndOf="@+id/textViewPaymentPrice"
+        app:layout_constraintTop_toTopOf="@+id/buttonGereksizPayment3" />
+
+    <Spinner
+        android:id="@+id/spinnerDeliveryDate"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_gradient"
+        android:entries="@array/teslimtarihi"
+        android:paddingRight="10dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeliveryDate" />
+
+    <Spinner
+        android:id="@+id/spinnerPaymentMethod"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_gradient"
+        android:entries="@array/ödemeşekli"
+        android:paddingRight="10dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPaymentMethod" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

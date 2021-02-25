@@ -1,0 +1,36 @@
+<resources>
+    <string name="title_activity_login2">LoginActivity2</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_restaurant_registration">Map</string>
+    <string name="title_activity_restaurant_map">Map</string>
+
+    <string name="app_name">fUwUd</string>
+    <string-array name="mutfaklar">
+        <item>Balık</item>
+        <item>Burger</item>
+        <item>Çiğ Köfte</item>
+        <item>Ev Yemekleri</item>
+        <item>Pizza</item>
+        <item>Tatlı</item>
+    </string-array>
+
+    <string-array name="teslimtarihi">
+        <item>Bugün</item>
+        <item>İleri Tarihe</item>
+    </string-array>
+
+    <string-array name="ödemeşekli">
+        <item>Kapıda Kredi Kartı</item>
+        <item>Kapıda Nakit</item>
+        <item>Online Ödeme</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_basket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerViewBasket"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/open_sans"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGereksiz"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/buttonGereksiz" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Toplam Ücret:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGereksiz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonGereksiz" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/open_sans"
+        android:text="TL"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGereksiz"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotalPrice"
+        app:layout_constraintTop_toTopOf="@+id/buttonGereksiz" />
+
+    <Button
+        android:id="@+id/buttonGereksiz"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_gradient2"
+        android:fontFamily="@font/open_sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/buttonBasketComplete"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_complete"
+        android:fontFamily="@font/open_sans"
+        android:text="SEPETİ ONAYLA"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGereksiz"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGereksiz"
+        app:layout_constraintTop_toTopOf="@+id/buttonGereksiz" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

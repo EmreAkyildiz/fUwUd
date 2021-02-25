@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activity.FragmentOther">
+
+    <Button
+        android:id="@+id/buttonProfile"
+        android:layout_width="412dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/button_others"
+        android:drawableLeft="@drawable/icon_profile"
+        android:drawableRight="@drawable/icon_right"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/open_sans"
+        android:padding="8dp"
+        android:text="Profilim"
+        android:textAlignment="viewStart"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPreviousOrders"
+        android:layout_width="412dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/button_others"
+        android:drawableLeft="@drawable/icon_previousorder"
+        android:drawableRight="@drawable/icon_right"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/open_sans"
+        android:padding="8dp"
+        android:text="Önceki Siparişlerim"
+        android:textAlignment="viewStart"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProfile" />
+
+    <Button
+        android:id="@+id/buttonAddresses"
+        android:layout_width="412dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/button_others"
+        android:drawableLeft="@drawable/icon_addresses"
+        android:drawableRight="@drawable/icon_right"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/open_sans"
+        android:padding="8dp"
+        android:text="Adresim"
+        android:textAlignment="viewStart"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFavorites" />
+
+    <Button
+        android:id="@+id/buttonFavorites"
+        android:layout_width="412dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/button_others"
+        android:drawableLeft="@drawable/icon_favorites"
+        android:drawableRight="@drawable/icon_right"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/open_sans"
+        android:padding="8dp"
+        android:text="Favori Restaurantlarım"
+        android:textAlignment="viewStart"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPreviousOrders" />
+
+    <Button
+        android:id="@+id/buttonSignOut"
+        android:layout_width="412dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_others"
+        android:fontFamily="@font/open_sans"
+        android:padding="8dp"
+        android:text="Güvenli Çıkış"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAboutApp"
+        android:layout_width="412dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/button_others"
+        android:drawableLeft="@drawable/icon_aboutapp"
+        android:drawableRight="@drawable/icon_right"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/open_sans"
+        android:padding="8dp"
+        android:text="Uygulama Hakkında"
+        android:textAlignment="viewStart"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddresses" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "66483011380",
+    "firebase_url": "https://fuwud-4665e-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "fuwud-4665e",
+    "storage_bucket": "fuwud-4665e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66483011380:android:bada5dc6cc787c5cdaef61",
+        "android_client_info": {
+          "package_name": "com.impostors.fuwud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "66483011380-7p040u7tu2463r4eeqbo48q7ako47jc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlEouWFf7C_NTa0PWMNNoBBWd1io-pziM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "66483011380-7p040u7tu2463r4eeqbo48q7ako47jc9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

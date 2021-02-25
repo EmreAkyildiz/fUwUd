@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/actionOrder"
+        android:icon="@drawable/icon_order"
+        android:title="Sipariş" />
+    <item
+        android:id="@+id/actionSearch"
+        android:icon="@drawable/icon_search"
+        android:title="Ara" />
+    <item
+        android:id="@+id/actionBasket"
+        android:icon="@drawable/icon_basket"
+        android:title="Sepetim" />
+    <item
+        android:id="@+id/actionOther"
+        android:icon="@drawable/icon_other"
+        android:title="Diğer" />
+
+</menu>

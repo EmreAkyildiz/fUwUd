@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray">#AAAAAA</color>
+    <color name="koyusari">#FDFF96</color>
+    <color name="turuncu">#EFD200</color>
+    <color name="aciksari">#FEFFE5</color>
+    <color name="beyazsari">#FEFFF1</color>
+    <color name="yesil">#A0E16C</color>
+    <color name="primaryColor">#6200EE</color>
+    <color name="primaryColor2">#969DFF</color>
+    <color name="purple">#969DFF</color>
+    <color name="secondaryColor">#BCC0FF</color>
+    <color name="black">#292929</color>
+    <color name="grey">#474747</color>
+    <color name="lightGrey">#777676</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF9E82</color>
+    <color name="lightlightyellow">#FEFFE9</color>
+
+</resources>

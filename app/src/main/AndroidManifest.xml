@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.impostors.fuwud">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="fUwUd"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.PaymentActivity"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activity.RestaurantMapActivity"
+            android:label="@string/title_activity_restaurant_map" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".Activity.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OtherAboutAppActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OtherPaymentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OtherAddressesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OtherFavoritesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OtherPreviousOrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OtherProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.RegistrationRestaurantActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MainPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.RestaurantPanelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ListedRestaurantActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.RestaurantDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".Activity.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
